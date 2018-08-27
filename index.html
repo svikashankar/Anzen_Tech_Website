@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+
+<head >
+  <script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+<title>Anzen Tech</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+<body onload="startTime()">
+
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">ANZEN<span class="logo_colour"> TECH</span></a></h1>
+          
+        </div>
+      </div>
+      <div class="topright" id="txt" style="color:white"></div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="selected"><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="ourproducts.html">Our Products</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <!-- insert your sidebar items here -->
+       <h2><b>Latest News</b></h2>
+        <h4>New Company Launched</h4>
+        <h5>January, 2018</h5>
+        <p>This is our website. Take a look around and let us know what you think.<br /><a href="#">Read more</a></p>
+        <p>
+        <h3>Our Links</h3>
+        <ul>
+          <li><a href="https://www.facebook.com/anzentech.co.in/?ref=br_rs">Face Book</a></li>
+          <li><a href="https://twitter.com/TechAnzen">Twitter</a></li>
+          <li><a href="https://www.linkedin.com/company/anzentech/">Linked In</a></li> 
+          <li><a href="https://www.youtube.com/watch?v=TReFzj8O-co">YouTube</a></li> 
+        </ul>
+        <h3>Search</h3>
+        <form method="post" action="#" id="search_form">
+          <p>
+            <input class="search" type="text" name="search_field" value="Enter keywords....." />
+            <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
+          </p>
+        </form>
+      </div>
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1><b>Welcome to Anzen Tech</b></h1>
+        <h4>
+          <p>We mold technology to your benefit.</p>
+          <P> Anzen Tech is a one-stop custom software development company with a talent pool of experienced engineers.</P>
+          
+          <p>We help startups and fast-growing tech companies build successful, secure and scalable products with great user experience</P>
+          
+          <P>We cover all stages of the software development life cycle: From initial system architecture, DevOp's, UX/UI, to large-scale applications that include web, mobile, big data, QA, and application support.</p>
+          </h4>
+        </div>
+        <br>
+        <p style="float: left;text-align:top">
+    <h1><img style="width:90px;height:100px;" src="images/logo.png" alt="Website Logo" align="middle"><b><font size="10">ANZEN<span> TECH</b></span></font></h1></p>
+    </div>
+    <div id="footer">
+      Copyright &copy; Anzen Tech | <a href="https://www.anzentech.co.in/"> Our Website</a> |
+    </div>
+  </div>
+</body>
+</html>

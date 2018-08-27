@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html>
+
+<head >
+  <script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+<title>service</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+<body onload="startTime()">
+
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">ANZEN<span class="logo_colour"> TECH</span></a></h1>
+          
+        </div>
+      </div>
+      <div class="topright" id="txt" style="color:white"></div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="index.html">Home</a></li>
+          <li class="selected"><a href="services.html">Services</a></li>
+          <li><a href="ourproducts.html">Our products</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <!-- insert your sidebar items here -->
+         <h2><b>Latest News</b></h2>
+        <h4>New Company Launched</h4>
+        <h5>January, 2018</h5>
+        <p>This is our website. Take a look around and let us know what you think.<br /><a href="#">Read more</a></p>
+        <p>
+        <h3>Our Links</h3>
+        <ul>
+          <li><a href="https://www.facebook.com/anzentech.co.in/?ref=br_rs">Face Book</a></li>
+          <li><a href="https://twitter.com/TechAnzen">Twitter</a></li>
+          <li><a href="https://www.linkedin.com/company/anzentech/">Linked In</a></li> 
+          <li><a href="https://www.youtube.com/watch?v=TReFzj8O-co">YouTube</a></li> 
+        </ul>
+        <h3>Search</h3>
+        <form method="post" action="#" id="search_form">
+          <p>
+            <input class="search" type="text" name="search_field" value="Enter keywords....." />
+            <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
+          </p>
+        </form>
+      </div>
+      <div id="content">
+        <!-- insert the page content here -->
+       <table style="width:100%; border-spacing:0;">
+          <tr><th><center>Web App Development</center></th></tr>
+        </table>
+       <p> 
+      <h4>Getting a quality website is not an expenses but rather an investment.</h4>
+    </p>
+
+     <table style="width:100%; border-spacing:0;">
+          <tr><th><center>Mobile App Development</center></th></tr>
+        </table>
+       <p> 
+      <h4>Mobile is not the future, it is the now. Meet your customers in the environment of their choice, not where it's convenient for you..</h4>
+    </p>
+
+     <table style="width:100%; border-spacing:0;">
+          <tr><th><center>UI/UX</center></th></tr>
+        </table>
+       <p> 
+      <h4>Design is not just what it looks like and feels like. Design is how it works. Good design is a renaissance attitude that combines technology, cognitive science, human need, and beauty to produce something that the world can't live without it.</h4>
+    </p>
+
+     <table style="width:100%; border-spacing:0;">
+          <tr><th><center>Cyber Securityt</center></th></tr>
+        </table>
+       <p> 
+      <h4>It takes years to build a reputation and few minutes to ruin it. They want what you’ve got, don’t give it to them.</h4>
+    </p>
+
+     <table style="width:100%; border-spacing:0;">
+          <tr><th><center>Web App Development</center></th></tr>
+        </table>
+       <p> 
+      <h4>Getting a quality website is not an expenses but rather an investment.</h4>
+    </p>
+
+     <table style="width:100%; border-spacing:0;">
+          <tr><th><center>Fraud Detection</center></th></tr>
+        </table>
+       <p> 
+      <h4>Combat fraud at inception with early detection and prevention.</h4>
+    </p>
+
+     <table style="width:100%; border-spacing:0;">
+          <tr><th><center>AI Integration</center></th></tr>
+        </table>
+       <p> 
+      <h4>AI enriches people’s lives by making customer interactions more natural and valuable.</h4>
+    </p>
+
+ <table style="width:100%; border-spacing:0;">
+          <tr><th><center>Blockchain Solutions</center></th></tr>
+        </table>
+       <p> 
+      <h4>rovide more security via distributed system than having everything in one single place.</h4>
+    </p>
+
+
+     <table style="width:100%; border-spacing:0;">
+          <tr><th><center>CMS</center></th></tr>
+        </table>
+       <p> 
+      <h4>Control & Create content more effectively & efficiently.</h4>
+    </p>
+
+<table style="width:100%; border-spacing:0;">
+          <tr><th><center>Support & Maintenance</center></th></tr>
+        </table>
+       <p> 
+      <h4>It doesn’t end at release but making sure its running, active & provide proper support keeps it growing.</h4>
+    </p>
+  </div>
+</p>
+</div>
+</div>
+</div>
+    <div id="footer">
+      Copyright &copy; Anzen Tech | <a href="https://www.anzentech.co.in/"> Our Website</a> |
+    </div>
+  </div>
+</body>
+</html>
